@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+*{
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --main-color: #09B451;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 9vw;
+}
+
+.header__nav a{
+    text-decoration: none;
+    width: 83px;
+    height: 48px;
+    color: #404040CC;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0px 20px;   
+}
+
+.btn{
+    padding: 8px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 20px;
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+.--primary{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.background{
+    display: flex;
+    background-image: linear-gradient(to top right, rgba(9, 180, 81, 0.1), #fff, #fff);
+    padding: 30px 60px 0px;
+    margin-left: 97px;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.--main--color{
+    color: var(--main-color);
+}
+
+.background__content .btn{
+    padding: 15px 30px;
+}
+
+.background__content h1{
+    font-size: 55px;
+}
+.background__content{
+    width: 40%;
+}
+
+body{
+    padding: 0 100px;
+}
+
+.header-mobile{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 25px;
+    font-size: 30px;
+}
+.header-mobile__menu{
+    align-items: center;
+    display: flex;
+}
+
+.header-mobile__menu i{
+    margin-right: 12px;
+}
+
+.background-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 1000px){
+    .header-mobile{
+        display: flex;
+    }
+    .header{
+        display: none;
+    }
+    body{
+        padding: 10px;
+    }
+
+    .background{
+        flex-direction: column;
+        margin-left: 0px;
+        padding: 50px;
+    }
+
+    .background__content{
+        width: 100%;
+    }
+    
+    .background__content h1{
+        font-size: 30px;
+        margin-bottom: 15px;
+        width: 90%;
+    }
+
+    .background__content{
+        margin-bottom: 30px;
+    }
+
+    .background__img{
+        width: 80%;
+        display: flex;
+    }
+
+    .background__img img{
+        width: 85vw;
+        padding-right: 30px;
+    }
+}
